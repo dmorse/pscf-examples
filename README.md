@@ -1,2 +1,3 @@
 # pscf-examples
-Examples for pscf (polymer self-consistent field theory) 
+
+Examples for PSCF (polymer self-consistent field theory) Package
