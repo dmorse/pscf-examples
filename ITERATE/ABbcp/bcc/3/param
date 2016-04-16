@@ -44,17 +44,15 @@ ngrid
 chain_step
    0.01
 
-FILE_PREFIXES
-input_prefix        
-          'in.'
-output_prefix       
-             ''
-
 BASIS
 group_name          
      'I m -3 m'
 
 ITERATE
+input_filename
+     'in.omega'
+output_prefix       
+         'out/'
 max_itr             
              20
 error_max           
