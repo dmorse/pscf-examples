@@ -36,7 +36,7 @@ crystal_system
 N_cell_param
               1
 cell_param
-  1.7770321E+00
+  1.77703537E+00
 
 DISCRETIZATION
 ngrid
@@ -63,13 +63,6 @@ itr_algo
            'NR'
 N_cut
 	61
-
-SWEEP
-s_max
-  4.0000000E+01
-d_chi
-  1.0000000E-00
-end_increments
 
 FINISH
 
