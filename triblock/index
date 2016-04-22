@@ -7,13 +7,13 @@ chi(AB)N = chi(BC)N = 13
 
                        AC-isopleth
 ===================================
-lam --  lamellae
-hex --  hexagonal cylinders
-bcc --  BCC packed spheres
-ca  --  alternating cyliners
-ga  --  alternating Gyroid
-sa  --  alternating sphere (CsCl)
-fa  --  alternating FCC (NaCl)
+lam     --  lamellae
+hex     --  hexagonal cylinders
+bcc     --  BCC packed spheres
+altCyl  --  alternating cyliners
+altGyr  --  alternating Gyroid
+CsCl    --  alternating BCC 
+NaCl    --  alternating FCC 
 
                          f(B)=0.55
 ===================================
