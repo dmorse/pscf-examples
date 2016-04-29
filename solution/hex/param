@@ -28,9 +28,9 @@ COMPOSITION
 ensemble            
                    0
 phi_chain           
-    1.0000000000E+00
+    0.9000000000E+00
 phi_solvent         
-    0.0000000000E+00
+    0.1000000000E+00
 
 INTERACTION         
 interaction_type    
@@ -51,21 +51,19 @@ cell_param
 
 DISCRETIZATION      
 ngrid               
-                 144                 144
+                  32                  32
 chain_step          
     1.0000000000E-02
-
-FILE_PREFIXES       
-input_prefix        
-           'in.'
-output_prefix       
-            'test/'
 
 BASIS               
 group_name          
            'P 6 m m'
 
 ITERATE             
+input_filename        
+          'in.omega'
+output_prefix
+              'out/'
 max_itr             
                  100
 error_max           
@@ -73,7 +71,8 @@ error_max
 domain              
                    T
 itr_algo            
-           'broyden'
+                 'NR'
 N_cut               
-                1375
+                 100
+
 FINISH              
