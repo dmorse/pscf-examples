@@ -12,8 +12,8 @@ hex     --  hexagonal cylinders
 bcc     --  BCC packed spheres
 altCyl  --  alternating cyliners
 altGyr  --  alternating Gyroid
-CsCl    --  alternating BCC 
-NaCl    --  alternating FCC 
+CsCl    --  alternating BCC (Cesium Choride)
+NaCl    --  alternating FCC (Sodium Choride)
 
                          f(B)=0.55
 ===================================

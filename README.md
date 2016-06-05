@@ -18,7 +18,7 @@ installers for some operating systems, is located at
 
 The source code for PSCF is maintained in the github repository:
 
-     https://github.com/dmorse/pscf.
+     https://github.com/dmorse/pscf
  
 I. Directory Structure
 
@@ -27,7 +27,9 @@ examples of simulations involving different types of system.
 The main subdirectories are currently:
 
    diblock/
+
    triblock/
+
    solution/
 
 Directory diblock/ contains examples for neat (one-component) 
