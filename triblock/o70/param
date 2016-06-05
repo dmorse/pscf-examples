@@ -49,17 +49,15 @@ N_grids
 chain_step
           0.01
 
-FILE_PREFIXES
-input_filename
-         'in.omega'
-output_prefix
-            ''
-
 BASIS 
 group_name          
   'F d d d : 2'
 
 ITERATE
+input_filename
+         'in.omega'
+output_prefix
+            'out/'
 max_itr
             100
 error_max           

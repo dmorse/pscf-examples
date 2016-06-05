@@ -73,32 +73,12 @@ domain
 itr_algo            
                 'NR'
 N_cut               
-                  88
+                  80
+
+FIELD_TO_RGRID
+input_filename
+                'out/rho'
+output_filename
+                'out/rho_rgrid'
 
 FINISH              
-
-THERMO              
-f_Helmholtz         
-   -4.6036932919E+01
-f_homo              
-   -4.5824403326E+01
-pressure            
-    2.9110414502E+01
-mu_chain            
-    1.2400506238E+01
-mu_solvent          
-   -1.2725199227E+00
-stress              
-    2.0668462309E-13
-
-STATISTICS          
-N_star              
-                 235
-Final Error         
-    2.9522155933E-09
-Iterations          
-                  16
-Basis Time          
-    7.4280000000E+00
-SCF Time            
-    2.7667200000E+02

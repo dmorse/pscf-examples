@@ -14,7 +14,7 @@ N_block
 block_monomer       
                    1                   2
 block_length        
-    5.6000000000E-01    4.4000000000E-01
+    5.0000000000E-01    5.0000000000E-01
 
 COMPOSITION
 ensemble            
@@ -26,7 +26,7 @@ INTERACTION
 interaction_type
                'chi'
 chi                 
-    1.2000000000E+01
+    1.5000000000E+01
 
 UNIT_CELL           
 dim                 
@@ -54,7 +54,7 @@ input_filename
 output_prefix       
               'out/'
 max_itr             
-                 100
+                 200
 error_max           
     1.0000000000E-08
 domain              
