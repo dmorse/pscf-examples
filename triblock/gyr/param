@@ -45,21 +45,19 @@ cell_param
  
 DISCRETIZATION 
 ngrid               
-             48             48             48
+             36             36             36
 chain_step          
   1.0000000E-02
- 
-FILE_PREFIXES  
-input_filename        
-          'in.omega'
-output_prefix       
-             ''
  
 BASIS          
 group_name          
      'I a -3 d'
  
 ITERATE        
+input_filename        
+          'in.omega'
+output_prefix       
+             'out/'
 max_itr             
             100
 error_max           
@@ -69,7 +67,7 @@ domain
 itr_algo
            'NR'
 N_cut               
-            200
+            100
 
 FINISH         
 

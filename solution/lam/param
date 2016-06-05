@@ -79,7 +79,6 @@ FIELD_TO_RGRID
 input_filename
            'out/rho'
 output_filename
-       'out/rho.grd'
-          'out/omega'
+       'out/rho_rgrid'
 
 FINISH

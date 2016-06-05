@@ -75,30 +75,10 @@ itr_algo
 N_cut               
                  217
 
+FIELD_TO_RGRID
+input_filename
+               'out/rho'
+output_filename
+               'out/rho_rgrid'
+
 FINISH              
-
-THERMO              
-f_Helmholtz         
-   -2.7028305516E+00
-f_homo              
-    1.1605791347E+00
-pressure            
-    1.0530315228E+01
-mu_chain            
-    1.2937891223E+01
-mu_solvent          
-   -3.7518674800E-01
-stress              
-    8.9012469100E-15
-
-STATISTICS          
-N_star              
-                 217
-Final Error         
-    5.3586762957E-09
-Iterations          
-                  10
-Basis Time          
-    5.8000000000E-01
-SCF Time            
-    2.6840000000E+00

@@ -65,18 +65,3 @@ N_cut
   95   
 
 FINISH
-mu                  
-  6.1744597E+00
-
-************************************
-
-N_star      =                    95
-f_Helmholtz =         2.6145893E+00
-f_homo      =         2.7500000E+00
-pressure    =         3.5598704E+00
-cell_param  =         1.9232020E+00
-stress      =         1.8757721E-09
-Final Error =         2.4548594E-09
-Iterations  =                     8
-Basis time  =         6.9225061E+00
-SCF time    =         8.7255597E-01
