@@ -14,7 +14,7 @@ N_block
 block_monomer       
                    1                   2
 block_length        
-    5.0000000000E-01    5.0000000000E-01
+    4.0000000000E-01    6.0000000000E-01
 
 COMPOSITION         
 ensemble            
@@ -26,7 +26,7 @@ INTERACTION
 interaction_type    
                'chi'
 chi                 
-    1.5000000000E+01
+    2.0000000000E+01
 
 UNIT_CELL           
 dim                 
@@ -66,10 +66,9 @@ N_cut
 
 SWEEP               
 s_max               
-    2.2000000000E+01
+    5.0000000000E+00
 d_block_length
-   -1.0000000000E-02    1.0000000000E-02
+   -2.0000000000E-02    2.0000000000E-02
 end_increments      
 
 FINISH     
-

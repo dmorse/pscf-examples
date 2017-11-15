@@ -54,7 +54,7 @@ input_filename
 output_prefix       
                'out/'
 max_itr             
-                  20
+                  50
 error_max           
     1.0000000000E-08
 domain              
@@ -66,9 +66,9 @@ N_cut
 
 SWEEP               
 s_max               
-    2.0000000000E+01
+    1.0000000000E+01
 d_block_length
-   -1.0000000000E-02  1.0000000000E-02
+   -2.0000000000E-02  2.0000000000E-02
 end_increments      
 
 FINISH              

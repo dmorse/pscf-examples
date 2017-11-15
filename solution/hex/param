@@ -22,22 +22,22 @@ N_solvent
 solvent_monomer     
                    3
 solvent_size        
-    3.0000000000E-03
+    5.0000000000E-02
 
 COMPOSITION         
 ensemble            
                    0
 phi_chain           
-    0.9000000000E+00
+    7.5000000000E-01
 phi_solvent         
-    0.1000000000E+00
+    2.5000000000E-01
 
 INTERACTION         
 interaction_type    
                'chi'
 chi                 
-    4.0000000000E+01
-    4.0000000000E+01    1.0000000000E+02
+    3.0000000000E+01
+    1.0000000000E+02    3.0000000000E+01
 
 UNIT_CELL           
 dim                 
@@ -47,11 +47,11 @@ crystal_system
 N_cell_param        
                    1
 cell_param          
-    1.2923072646E+01
+    1.4839818407E+01
 
 DISCRETIZATION      
 ngrid               
-                  32                  32
+                  48                  48
 chain_step          
     1.0000000000E-02
 
@@ -60,9 +60,9 @@ group_name
            'P 6 m m'
 
 ITERATE             
-input_filename        
+input_filename      
           'in.omega'
-output_prefix
+output_prefix       
               'out/'
 max_itr             
                  100
@@ -71,8 +71,14 @@ error_max
 domain              
                    T
 itr_algo            
-                 'NR'
+                'NR'
 N_cut               
-                 100
+                 217
+
+FIELD_TO_RGRID
+input_filename
+               'out/rho'
+output_filename
+               'out/rho_rgrid'
 
 FINISH              
