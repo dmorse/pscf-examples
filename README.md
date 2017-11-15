@@ -1,6 +1,11 @@
-
 Examples for PSCF (polymer self-consistent field theory) Package
 ----------------------------------------------------------------
+
+This repository contains input files for a set of examples for
+the PSCF polymer self-consistent field theory software. The
+source code is maintained in a separate github repository at
+https://github.com/dmorse/simpatico . See the README file in
+that repository for links to the home page, users manual etc.
 
 I. Example directory structure:
 
