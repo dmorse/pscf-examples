@@ -1,5 +1,4 @@
-Examples for PSCF (polymer self-consistent field theory) 
---------------------------------------------------------
+# Examples for PSCF (polymer self-consistent field theory) 
 
 This directory contains a collection of input files for examples 
 that can be run with the PSCF polymer self-consistent field theory 
@@ -17,7 +16,7 @@ at http://morse.cems.umn.edu/morse/code/pscf/home.php.html
 The source code for PSCF is maintained in the github 
 repository: https://github.com/dmorse/pscf
  
-# Directory Structure
+## Directory Structure
 
 The top level subdirectories of this repository each contain 
 examples of simulations involving different types of system. 
@@ -55,7 +54,7 @@ single set of parameters, and the sweep/ directory contains an
 example that uses the SWEEP parameter file command to perform
 a series of simulations along a line in parameter space.
 
-# Example Directory Contents
+## Example Directory Contents
 
 In what follows, we refer to a directory that contains an
 initial omega file used as an input for one example or 
@@ -76,13 +75,13 @@ Almost all example directories contains an initially empty
 subdirectory named 'out/'. This is where output files will 
 be created when you run an example.  
  
-# Running an an example:
+## Running an an example:
 
   To run an example:
 
-    - Change directory (cd) into the example directory of interest.
+     * Change directory (cd) into the example directory of interest.
 
-    - Enter the command: pscf < paramfile
+     * Enter the command: pscf < paramfile
 
   Here "paramfile" denotes the name of a particular parameter
   file.  This above command will run the example while outputting 
@@ -94,9 +93,9 @@ be created when you run an example.
   will run the example in the background and output this 
   information to a file named "log" in the out/ sub-directory.
 
-# Output files
+## Output files
 
-  ITERATE Examples:
+  #### ITERATE Examples:
 
   Examples that solve the SCFT equations for a single set of 
   input parameters create the following output files in the
@@ -106,7 +105,7 @@ be created when you run an example.
       out/rho   = output monomer volume fraction fields
       out/omega = output omega fields
   
-  SWEEP Examples:
+  #### SWEEP Examples:
 
   Examples in which the parameter file contains a SWEEP command
   cause the program to solve the SCF equations for a set of input 
