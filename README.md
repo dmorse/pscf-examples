@@ -1,26 +1,24 @@
 # Examples for PSCF (polymer self-consistent field theory) 
 
-This directory contains a collection of input files for examples 
-that can be run with the PSCF polymer self-consistent field theory 
-software to compute properties of periodic microstructures of 
-block copolymer materials. These examples are provided to
-demonstrate the contents and syntax of the file formats used 
-by PSCF, and as potentially useful starting points for new 
-simulations.
+This directory contains a collection of input files for examples that can 
+be run with the PSCF polymer self-consistent field theory software. PSCF
+is a fortran program that can be used to compute properties of periodic 
+microstructures of block copolymer materials. These examples are provided 
+to demonstrate the contents and syntax of the file formats used by PSCF, 
+and as potentially useful starting points for new simulations.
 
-The home page for the PSCF package, which provides links 
-to the documentation and source code, and downloadable 
-binary installers for some operating systems, is located 
-at http://morse.cems.umn.edu/morse/code/pscf/home.php.html
-
-The source code for PSCF is maintained in the github 
-repository: https://github.com/dmorse/pscf
+The home page for the PSCF package is located at:
+http://morse.cems.umn.edu/morse/code/pscf/home.php.html
+The PSCF home page provides links to the user documentation and source 
+code, and downloadable binary installers for some operating systems.
+The fortran source code for PSCF is maintained in the github repository: 
+https://github.com/dmorse/pscf
  
 ## Directory Structure
 
-The top level subdirectories of this repository each contain 
-examples of simulations involving different types of system. 
-The main subdirectories are currently:
+The top level subdirectories of this repository each contain examples of 
+simulations involving different types of system.  The main subdirectories 
+are currently:
 
    diblock/
 
@@ -28,67 +26,63 @@ The main subdirectories are currently:
 
    solution/
 
-Directory diblock/ contains examples for neat (one-component) 
-diblock copolymer melts.  Directory triblock/ contains examples 
-for neat ABC triblock terpolymer melts.  Directory ssolution/ 
-contains examples of ordered phases of a mixture of  adiblock
-copolymer and a selective small molecule solvent. We will refer 
-to these top level subdirectories in what follows as "system 
-level" directories. 
+Directory diblock/ contains examples for neat (one-component) diblock 
+copolymer melts.  Directory triblock/ contains examples for neat ABC 
+triblock terpolymer melts.  Directory ssolution/ contains examples of 
+ordered phases of a mixture of diblock copolymer and a selective small 
+molecule solvent. We will refer to these top level subdirectories in 
+what follows as "system level" directories. 
 
-Subdirectories of these system level directoires each contain
-simulations of a different possible phase (i.e., crystal structure)
-of the system of interest. The names of these subdirectories are 
-abbreviations of the names of the phases: lam for lamellar, hex for 
-hexagonally packed cylinders, gyr for gyroid, etc. Each system level 
-subdirectory contains a CONTENTS file explaining these abbrevations 
-in greater detail. 
+Each ubdirectory of these system level directoires contains simulations 
+of a different possible phase (i.e., crystal structure) of the system 
+of interest. The names of these subdirectories are abbreviations of the 
+names of the phases: lam for lamellar, hex for hexagonally packed 
+cylinders, gyr for gyroid, etc. Each system level subdirectory contains 
+a CONTENTS file explaining these abbrevations in greater detail. 
 
-Directories that contain simulations of a particular phase may 
-either contain either the input files for a single example, or 
-subdirectories containing several examples of the same phase. 
-Some such directories contain two subdirectories named iterate/ 
-and sweep/. In this case, the iterate/ directory contains an 
-example of a simulation that solves the SCF equations for a 
-single set of parameters, and the sweep/ directory contains an 
-example that uses the SWEEP parameter file command to perform
-a series of simulations along a line in parameter space.
+Directories that contain simulations of a particular phase may either 
+contain either the input files for a single example, or subdirectories 
+containing several examples of the same phase.  Some such directories 
+contain two subdirectories named iterate/ and sweep/. In this case, the 
+iterate/ directory contains an example of a simulation that solves the 
+SCF equations for a single set of parameters, and the sweep/ directory 
+contains an example that uses the SWEEP parameter file command to perform
+a series of simulations along a line through parameter space.
 
 ## Example Directory Contents
 
-In what follows, we refer to a directory that contains an
-initial omega file used as an input for one example or 
-several closely related examples as an example directory.
-
-In each example directory, there are two types of input files,
-named
+In what follows, we refer to a directory that contains the input files 
+for a single example or several closely related examples that share 
+some input files as an example directory.  In each example directory, 
+there are two types of input files, named
    
    - in.omega:  an input omega (chemical potential) field
    - param*  :  a parameter file or files
 
-Each example file contains only one input omega file, but 
-may contain one or more param files. In example directories
-that contain more than one parameter files, the simplest
-example is usually named simply 'param'.
+Each example directory contains only one input omega file, but may 
+contain one or more param files with instructions for slightly different
+simulations. In example directories that contain more than one parameter 
+files, the parameter file for the simplest example is usually named 
+simply 'param'.
  
-Almost all example directories contains an initially empty 
-subdirectory named 'out/'. This is where output files will 
-be created when you run an example.  
+Almost all example directories contains an initially empty subdirectory 
+named 'out/'. Output files will be created in this directory when you 
+run an example.  
  
 ## Running an an example:
 
-  To run an example:
+To run an example:
 
-     * Change directory (cd) into the example directory of interest.
+   * Change directory (cd) into the example directory of interest.
 
-     * Enter the command: pscf < paramfile
+   * Enter the command: pscf < paramfile
 
-  Here "paramfile" denotes the name of a particular parameter
-  file.  This above command will run the example while outputting 
-  information reporting the progress of the calculation to the 
-  screen. Alternatively, the command
+Here "paramfile" denotes the name of a particular parameter file.  
+This above command will run the example while outputting 
+information reporting the progress of the calculation to the 
+screen. Alternatively, the command
 
-       pscf < paramfile > out/log &
+   pscf < paramfile > out/log &
 
   will run the example in the background and output this 
   information to a file named "log" in the out/ sub-directory.
