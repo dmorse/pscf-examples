@@ -48,6 +48,14 @@ BASIS
 group_name
       'P 6 m m'
 
+OUTPUT_GROUP
+output_filename
+          'out/group'
+
+OUTPUT_WAVES
+output_filename
+          'out/waves'
+
 ITERATE
 input_filename
            'in.omega'
